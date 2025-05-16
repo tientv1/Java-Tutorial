@@ -1,26 +1,35 @@
 package com.entity;
 
-public class User {
-    private String name;
-    private int age;
+import com.extend.Person;
 
-    public User setName (String name) {
+public class User extends Person {
+
+    public User(String name, int age, String address) {
         this.name = name;
-        return this;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public User setAge (int age) {
         this.age = age;
-        return this;
+        this.address = address;
     }
 
-    public void display() {
-        System.out.println("Tên: " + this.name +
-                "\n" +
-                "Tuổi: " + this.age);
-    }
+//    private String name;
+//    private int age;
+//
+//    public User setName (String name) {
+//        this.name = name;
+//        return this;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public User setAge (int age) {
+//        this.age = age;
+//        return this;
+//    }
+//
+//    public void display() {
+//        System.out.println("Tên: " + this.name +
+//                "\n" +
+//                "Tuổi: " + this.age);
+//    }
 }
