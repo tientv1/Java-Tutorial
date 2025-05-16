@@ -1,14 +1,16 @@
 package com;
 
-import com.objects.User;
+import com.entity.User;
 
 public class Main {
 
     public static void main(String[] args) {
-        User user = new User("Tom", 20);
-        User user1 = new User("Tom1", 20);
-        User user2 = new User("Tom2", 20);
-        User[] users = {user, user1, user2};
-        System.out.println(User.create(users, 3));
+        User user = new User();
+        user.setName("John 1").setAge(22).display();
+        user.setName("John 1").setAge(22).display();
+        user.setName("John 1").setAge(22).display();
+        user.setName("John 1").setAge(22).display();
+        // Nếu để như private String name; Ta không thể lấy thuộc tính như này --> user.name = "John 1";
+        // Nhưng khi để public String name; user.name = "John 1" thì dùng được;
     }
 }
